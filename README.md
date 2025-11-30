@@ -1,6 +1,6 @@
 # Overview
 
-![teaser](images/teaser.png)
+![teaser](teaser/teaser.png)
 
 This repository contains the demo code for the work ''Visual Analysis of Document Editing Patterns'' by Satkunarajan et al. [[1]](#ref1).
 
