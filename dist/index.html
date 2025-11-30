@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/style.css">
+    <script src="./build/js/app.js" type="module"></script>
+    <title>Detail View</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftOverview">
+            <svg></svg>
+        </div>
+        <div class="rightOverview">
+            <svg></svg>
+        </div>
+        <div class="import">
+            <input id="import" type="file" accept="application/json"><br>
+            <input type="checkbox" id="time" name="time" value="time">
+            <label for="time"> use time for x axis</label>
+            <a href="./version-overview.html">Go to Overview</a>
+            <a href="./comparison.html">Go to Comparison</a>
+        </div>
+        <div class="leftPage">
+            <svg></svg>
+        </div>
+        <div class="rightPage">
+            <svg></svg>
+        </div>
+        <div class="leftControls">
+            <button id="prevLeftPage">prev Page</button>
+            <button id="nextLeftPage">next Page</button><br>
+            <button id="prevLeftVersion">prev Version</button>
+            <button id="nextLeftVersion">next Version</button>
+        </div>
+        <div class="rightControls">
+            <button id="prevRightPage">prev Page</button>
+            <button id="nextRightPage">next Page</button><br>
+            <button id="prevRightVersion">prev Version</button>
+            <button id="nextRightVersion">next Version</button>
+        </div>
+        <div class="footer">
+            <div class="timeline">
+                <svg></svg>
+            </div>
+            <div class="legende">
+                <svg></svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

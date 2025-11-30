@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/comparison.css">
+    <script src="./build/js/comparison.js" type="module"></script>
+    <title>Overview</title>
+</head>
+<body>
+    <div class="container">
+        <div class="import">
+            <input id="import" type="file" multiple accept="application/json"><br>
+            <select name="color-scheme" id="color-scheme">
+                <option value="interpolateSpectral">Spectral</option>
+                <option value="interpolateRdYlGn">RdYlGn</option>
+                <option value="interpolateTurbo">Turbo</option>
+                <option value="interpolateViridis">Viridis</option>
+                <option value="interpolateInferno">Inferno</option>
+                <option value="interpolatePlasma">Plasma</option>
+                <option value="interpolateWarm">Warm</option>
+                <option value="interpolateCool">Cool</option>
+            </select>
+            <select name="attribute" id="attribute">
+                <option value="age">Age of words</option>
+                <option value="time">Time of editing</option>
+            </select>
+            <form id="view">
+                <input type="radio" name="view" id="last-version" value="last" checked>last version</button>
+                <input type="radio" name="view" id="word-length" value="word">average word length</button>
+                <input type="radio" name="view" id="heatmap" value="heat">changes heatmap</button>
+                <input type="radio" name="view" id="average-change" value="average">average changes</button>
+                <input type="radio" name="view" id="size-of-changes" value="size">size of changes</button>
+            </form>
+            <a href="./index.html">Go to Detail</a>
+            <a href="./version-overview.html">Go to Overview</a>
+        </div>
+        <div class="content">
+            <svg></svg>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+    /** color scheme **/
+    --default: grey;
+    --added: #4d9221;
+    --removed: #c51b7d;
+    --moved: blue;
+
+    --timeline_added_left: #b8e186;
+    --timeline_added_right: #7fbc41;
+    --timeline_added_both: #4d9221;
+
+    --timeline_removed_left: #f1b6da;
+    --timeline_removed_right: #de77ae;
+    --timeline_removed_both: #c51b7d;
+}
+
+body {
+    height: calc(100vh - 16px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+    grid-template-rows: 50px 1fr 50px 250px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100%;
+
+    /*
+     * Keep "margin" from generating scroll:
+     * either: `height: calc(100% - 2 * 8px);`
+     * or below:
+     */
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.leftOverview {
+    grid-area: 1 / 1 / 4 / 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: 3px solid black;
+}
+
+.rightOverview {
+    grid-area: 1 / 4 / 4 / 5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: 3px solid black;
+}
+
+.overviewPage {
+    stroke: black;
+    stroke-width: 2;
+    fill: rgba(0, 0, 0, 0);
+}
+
+.selectedOverviewPage {
+    stroke-width: 3;
+    stroke: orange;
+}
+
+.import {
+    grid-area: 1 / 2 / 2 / 4;
+    text-align: center;
+    background-color: lightgrey;
+    outline: 3px solid black;
+}
+
+.leftPage {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.rightPage {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.leftControls {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: lightgrey;
+    outline: 3px solid black;
+    text-align: center;
+}
+
+.rightControls {
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: lightgrey;
+    outline: 3px solid black;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-area: 4 / 1 / 5 / 5;
+    outline: 3px solid black;
+}
+
+.timeline {
+    height: 250px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.legende {
+    height: 250px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.word {
+    fill: var(--default);
+    stroke: var(--default);
+}
+
+.moved {
+    fill: var(--moved);
+    stroke: var(--moved);
+}
+
+.removed {
+    fill: var(--removed);
+    stroke: var(--removed)
+}
+
+.added {
+    fill: var(--added);
+    stroke: var(--added);
+}
+
+.highlighted {
+    outline: 2px solid black;
+}
+
+.highlighted_overview {
+    outline: 0.5px solid black;
+}
+
+.version_circle {
+    fill: var(--default);
+    stroke: var(--default);
+}
+
+.highlighted_circle {
+    stroke: black;
+}
+
+.tooltip {
+    background-color: white;
+    opacity: 0.8;
+    outline: 2px solid black;
+    overflow: hidden;
+}

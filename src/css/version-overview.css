@@ -1,0 +1,67 @@
+:root {
+    /** color scheme **/
+    --default: grey;
+    --added: #4d9221;
+    --removed: #c51b7d;
+    --moved: blue;
+
+    --timeline_added_left: #b8e186;
+    --timeline_added_right: #7fbc41;
+    --timeline_added_both: #4d9221;
+
+    --timeline_removed_left: #f1b6da;
+    --timeline_removed_right: #de77ae;
+    --timeline_removed_both: #c51b7d;
+}
+
+body {
+    height: calc(100vh - 16px);
+}
+
+.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        height: 100%;
+    }
+    
+.import { 
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    background-color: lightgrey;
+    outline: 3px solid black;
+}
+
+.content { 
+    grid-area: 2 / 1 / 3 / 2;
+    /* outline: 3px solid black; */
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.tooltip {
+    background-color: white;
+    opacity: 0.8;
+    outline: 2px solid black;
+    overflow: hidden;
+}
+
+.canvasComponent {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.canvasBar {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+.canvasContent {
+    grid-area: 1 / 2 / 2 / 3;
+}
+    
