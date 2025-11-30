@@ -1,2 +1,32 @@
-# WritingPatterns
-Repository for the VINCI 2025 fullpaper publication
+# Overview
+
+![teaser](images/teaser.png)
+
+This repository contains the demo code for the work ''Visual Analysis of Document Editing Patterns'' by Satkunarajan et al. [[1]](#ref1).
+
+We introduce an visual-interactive approach to temporal and structural analysis of document writing patterns that is text-agnostic. 
+
+The approach comprises two views: the **Temporal overview**, which shows different temporal aspects of the underlying data. And the **Detail-view** which enables the close inspection and comparison of document snapshots.
+
+# Usage
+
+**Prerequisites**
+- Node.js installed
+
+**To run the code** 
+- navigate into the project folder
+- type and execute npm run dev
+- app is opened on localhost:8000
+- explore!
+
+
+# Demo video
+
+**coming soon**
+
+# References
+<a name="ref1"></a> [1] tbd.
+
+# Special Thanks
+
+This code is originally written by and based on the Bachelor Thesis of Josia Rieß. His bachelor Thesis can be found at https://elib.uni-stuttgart.de/server/api/core/bitstreams/7cd5bd60-ef6c-4b55-9649-76f2a9f5f1cf/content.
