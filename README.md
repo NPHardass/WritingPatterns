@@ -7,11 +7,16 @@ This repository contains the demo code for the work ''Visual Analysis of Documen
 We introduce an visual-interactive approach to temporal and structural analysis of document writing patterns that is text-agnostic. 
 
 The approach comprises two views: the **Temporal overview**, which shows different temporal aspects of the underlying data. And the **Detail-view** which enables the close inspection and comparison of document snapshots.
+The approach utilizes a history of the document editing process for the visual representations. We create the history by tracking the token-level changes in the document during the editing process. A token-level change we define as a new addition, a removal or positional change of a token. 
+We create a **document snapshot** for every single token-level change by comparing consecutive document instances.
+A PDF document is creates for every document snapshot. The approach preserves and recreates the PDF layout for its visualizations.
+
 
 # Usage
 
 **Prerequisites**
 - Node.js installed
+- 
 
 **To run the code** 
 - navigate into the project folder
