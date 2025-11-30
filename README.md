@@ -16,7 +16,7 @@ A PDF document is creates for every document snapshot. The approach preserves an
 
 **Prerequisites**
 - Node.js installed
-- 
+- Data available locally (ask the authors if you need data)
 
 **To run the code** 
 - navigate into the project folder
@@ -27,7 +27,7 @@ A PDF document is creates for every document snapshot. The approach preserves an
 
 # Demo video
 
-**coming soon**
+**tbd**
 
 # References
 <a name="ref1"></a> [1] tbd.
