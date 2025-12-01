@@ -16,7 +16,7 @@ A PDF document is creates for every document snapshot. The approach preserves an
 
 **Prerequisites**
 - Node.js installed
-- Data available locally (ask the authors if you need data)
+- Use your own data or download and unzip the data file found under data/
 
 **To run the code** 
 - navigate into the project folder
